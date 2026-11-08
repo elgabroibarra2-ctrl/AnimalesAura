@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Donaciones";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/donaciones.css" asp-append-version="true" />
+}
+<main>
+    <section>
+        <h1>Realiza tu Donación</h1>
+        <p>Tu contribución ayuda a alimentar y cuidar a nuestras mascotas rescatadas.</p>
+
+        <form id="form-donacion" asp-controller="Home" asp-action="Donaciones" method="post">
+            <fieldset>
+                <legend>Información del Donante</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana Pérez" />
+
+                <br />
+                <br />
+
+                <label for="monto">Selecciona un monto:</label>
+                <select id="monto" name="donacion" required>
+                    <option value="">-- Selecciona una cantidad --</option>
+                    <option value="100">$100 MXN</option>
+                    <option value="250">$250 MXN</option>
+                    <option value="500">$500 MXN</option>
+                </select>
+            </fieldset>
+
+            <br />
+
+            <button type="submit">Confirmar Donación</button>
+        </form>
+
+        <p id="error-donacion" style="color: red; display: none; font-weight: bold;">
+            Por favor, completa todos los campos requeridos.
+        </p>
+
+        <!-- Área donde JavaScript mostrará los datos del objeto en pantalla -->
+        <article id="confirmacion-resumen" style="display: none; background-color: #e8f5e9; padding: 15px; border: 1px solid #4caf50; margin-top: 20px;">
+            <h2>¡Gracias por tu apoyo!</h2>
+            <p id="resumen-texto"></p>
+        </article>
+    </section>
+</main>
+
+@section Scripts {
+    <script src="~/js/donaciones.js" asp-append-version="true"></script>
+}

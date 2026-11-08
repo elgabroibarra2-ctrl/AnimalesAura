@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Animales";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/animales.css" asp-append-version="true" />
+}
+
+<main class="animales-container">
+    <header class="animales-header">
+        <p class="subtitulo">CONOCE A TUS POSIBLES COMPAÑEROS</p>
+        <h1>Patitas buscando hogar</h1>
+        <p>Conoce a nuestros animales que esperan encontrar una familia.</p>
+    </header>
+
+    <section class="seccion-filtros">
+        <h2>Encuentra a tu compañero</h2>
+        <div class="filtros-container">
+            <button type="button" class="btn-filtro activo">Todos</button>
+            <button type="button" class="btn-filtro">Perritos</button>
+            <button type="button" class="btn-filtro">Gatitos</button>
+        </div>
+    </section>
+
+    <section class="grid-animales">
+        <article class="tarjeta-animal">
+            <img src="~/imagenes/max.jpg" alt="Max" onerror="this.src='https://via.placeholder.com/300x220?text=Max'" />
+            <div class="contenido-animal">
+                <h3>Max</h3>
+                <span class="etiqueta-especie">Joven - Perrito</span>
+                <p>Un compañero alegre, listo para explorar.</p>
+                <a href="#" class="btn-adoptar">Me interesa</a>
+            </div>
+        </article>
+
+        <article class="tarjeta-animal">
+            <img src="~/imagenes/luna.jpg" alt="Luna" onerror="this.src='https://via.placeholder.com/300x220?text=Luna'" />
+            <div class="contenido-animal">
+                <h3>Luna</h3>
+                <span class="etiqueta-especie">Adulta - Gatita</span>
+                <p>Una gatita curiosa que disfruta los lugares tranquilos.</p>
+                <a href="#" class="btn-adoptar">Me interesa</a>
+            </div>
+        </article>
+
+        <article class="tarjeta-animal">
+            <img src="~/imagenes/sol.jpg" alt="Sol" onerror="this.src='https://via.placeholder.com/300x220?text=Sol'" />
+            <div class="contenido-animal">
+                <h3>Sol</h3>
+                <span class="etiqueta-especie">Joven - Perrita</span>
+                <p>Una amiga llena de energía y alegría.</p>
+                <a href="#" class="btn-adoptar">Me interesa</a>
+            </div>
+        </article>
+    </section>
+</main>

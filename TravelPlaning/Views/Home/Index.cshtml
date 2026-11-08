@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+}
+
+<main class="index-container">
+    <!-- Contenido HTML de la vista -->
+</main>
+<main class="index-container">
+    <!-- Imagen superior principal -->
+    <div class="hero-image-box">
+        <img src="~/imagenes/mascotas-principal.jpg" alt="Perro y gato juntos" class="hero-img" />
+    </div>
+
+    <!-- Sección de encabezado centrada -->
+    <header class="hero-header">
+        <mark class="badge">🐾 ADOPTA CON EL CORAZÓN</mark>
+        <h1>Un hogar puede cambiarlo todo.</h1>
+        <p>Hay una patita esperando tu compañía. Conoce a perros y gatos que buscan una familia y da el primer paso hacia una amistad para siempre.</p>
+
+        <nav aria-label="Navegación principal de acciones" class="hero-buttons">
+            <a asp-controller="Home" asp-action="Animales" class="btn-primary">Conocer animales →</a>
+            <a asp-controller="Home" asp-action="Donaciones" class="btn-secondary">Quiero ayudar ♡</a>
+        </nav>
+    </header>
+
+    <!-- Pilares -->
+    <section aria-labelledby="sec-pilares" class="pilares-section">
+        <h2 id="sec-pilares">Nuestros Pilares</h2>
+        <article>
+            <h3>🏡 Adopción responsable</h3>
+            <p>Garantizamos un proceso transparente y enfocado en el bienestar animal.</p>
+        </article>
+        <article>
+            <h3>💜 Apoyo para cada etapa</h3>
+            <p>Te acompañamos antes, durante y después de la adopción.</p>
+        </article>
+        <article>
+            <h3>🐾 Amistades que empiezan aquí</h3>
+            <p>Conectamos familias con su mascota ideal.</p>
+        </article>
+    </section>
+</main>

@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Preguntas frecuentes";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/preguntas.css" asp-append-version="true" />
+}
+<section>
+    <span>ESTAMOS PARA ORIENTARTE</span>
+    <h1>Dudas frecuentes</h1>
+    <p>
+        ¿Tienes preguntas antes de dar el paso?
+        Aquí tienes una guía breve para empezar.
+    </p>
+</section>
+
+<section>
+    <details>
+        <summary>¿Adoptar tiene algún costo?</summary>
+        <p>
+            Algunos refugios pueden solicitar una cuota
+            de recuperación para cubrir gastos médicos,
+            vacunas y cuidados.
+        </p>
+    </details>
+
+    <details>
+        <summary>¿Qué necesito antes de adoptar?</summary>
+        <p>
+            Necesitas contar con un espacio seguro,
+            tiempo, alimento y disposición para cuidar
+            a tu nueva mascota.
+        </p>
+    </details>
+
+    <details>
+        <summary>¿Cómo sé si un animal es compatible conmigo?</summary>
+        <p>
+            Puedes conocer su personalidad y necesidades
+            antes de tomar una decisión.
+        </p>
+    </details>
+
+    <details>
+        <summary>¿Cómo puedo donar de forma segura?</summary>
+        <p>
+            Contacta directamente con el refugio y utiliza
+            únicamente sus medios oficiales.
+        </p>
+    </details>
+</section>
+@section Scripts {
+    <script src="~/js/preguntas.js" asp-append-version="true"></script>
+}
